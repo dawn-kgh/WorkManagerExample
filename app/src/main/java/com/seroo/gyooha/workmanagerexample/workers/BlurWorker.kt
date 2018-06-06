@@ -1,4 +1,4 @@
-package com.lezhin.gyooha.workmanagerexample.workers
+package com.seroo.gyooha.workmanagerexample.workers
 
 import android.content.ContentResolver
 import android.content.Context
@@ -7,7 +7,7 @@ import android.graphics.BitmapFactory
 import android.net.Uri
 import androidx.work.Data
 import androidx.work.Worker
-import com.lezhin.gyooha.workmanagerexample.Constants.KEY_IMAGE_URI
+import com.seroo.gyooha.workmanagerexample.Constants.KEY_IMAGE_URI
 
 class BlurWorker : Worker() {
 

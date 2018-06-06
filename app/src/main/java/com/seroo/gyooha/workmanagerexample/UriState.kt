@@ -1,3 +1,3 @@
-package com.lezhin.gyooha.workmanagerexample
+package com.seroo.gyooha.workmanagerexample
 
 data class UriState(val uriString: String = "", val needReturn: Boolean = false)

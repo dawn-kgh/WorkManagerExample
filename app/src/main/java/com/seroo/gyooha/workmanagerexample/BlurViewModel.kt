@@ -1,4 +1,4 @@
-package com.lezhin.gyooha.workmanagerexample
+package com.seroo.gyooha.workmanagerexample
 
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.ViewModel
@@ -10,9 +10,9 @@ import androidx.work.NetworkType
 import androidx.work.OneTimeWorkRequest
 import androidx.work.WorkManager
 import androidx.work.WorkStatus
-import com.lezhin.gyooha.workmanagerexample.workers.BlurWorker
-import com.lezhin.gyooha.workmanagerexample.workers.CleanupWorker
-import com.lezhin.gyooha.workmanagerexample.workers.SaveImageToFileWorker
+import com.seroo.gyooha.workmanagerexample.workers.BlurWorker
+import com.seroo.gyooha.workmanagerexample.workers.CleanupWorker
+import com.seroo.gyooha.workmanagerexample.workers.SaveImageToFileWorker
 import kotlin.properties.Delegates
 
 class BlurViewModel : ViewModel() {

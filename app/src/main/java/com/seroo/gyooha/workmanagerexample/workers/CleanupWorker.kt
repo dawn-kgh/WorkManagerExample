@@ -1,8 +1,8 @@
-package com.lezhin.gyooha.workmanagerexample.workers
+package com.seroo.gyooha.workmanagerexample.workers
 
 import android.util.Log
 import androidx.work.Worker
-import com.lezhin.gyooha.workmanagerexample.Constants.OUTPUT_PATH
+import com.seroo.gyooha.workmanagerexample.Constants.OUTPUT_PATH
 import java.io.File
 
 class CleanupWorker : Worker() {

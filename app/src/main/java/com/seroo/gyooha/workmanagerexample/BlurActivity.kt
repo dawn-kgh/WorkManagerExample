@@ -1,4 +1,4 @@
-package com.lezhin.gyooha.workmanagerexample
+package com.seroo.gyooha.workmanagerexample
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders

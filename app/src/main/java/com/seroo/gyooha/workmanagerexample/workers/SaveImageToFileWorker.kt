@@ -1,10 +1,10 @@
-package com.lezhin.gyooha.workmanagerexample.workers
+package com.seroo.gyooha.workmanagerexample.workers
 
 import android.annotation.SuppressLint
 import android.provider.MediaStore
 import androidx.work.Data
 import androidx.work.Worker
-import com.lezhin.gyooha.workmanagerexample.Constants
+import com.seroo.gyooha.workmanagerexample.Constants
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
