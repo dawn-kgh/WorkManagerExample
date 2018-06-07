@@ -19,8 +19,7 @@ class SaveImageToFileWorker : Worker() {
 
     override fun doWork(): WorkerResult {
         return try {
-            val resourceString = inputData.getString(
-                Constants.KEY_IMAGE_URI, "")
+            val resourceString = inputData.getString(Constants.KEY_IMAGE_URI, "")
             val resolver = applicationContext.contentResolver
 
             createBitmapByUri(resolver,

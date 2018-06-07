@@ -12,7 +12,10 @@ import androidx.work.WorkManager
 import androidx.work.WorkStatus
 import com.seroo.gyooha.workmanagerexample.workers.BlurWorker
 import com.seroo.gyooha.workmanagerexample.workers.CleanupWorker
+import com.seroo.gyooha.workmanagerexample.workers.MergeWorker
 import com.seroo.gyooha.workmanagerexample.workers.SaveImageToFileWorker
+import com.seroo.gyooha.workmanagerexample.workers.WorkerA
+import com.seroo.gyooha.workmanagerexample.workers.WorkerB
 import kotlin.properties.Delegates
 
 class BlurViewModel : ViewModel() {
@@ -35,7 +38,10 @@ class BlurViewModel : ViewModel() {
         var workerContinuation =
             workManager.beginUniqueWork(Constants.IMAGE_MANIPULATION_WORK_NAME,
                 ExistingWorkPolicy.REPLACE,
-                OneTimeWorkRequest.from(CleanupWorker::class.java))
+                OneTimeWorkRequest.from(CleanupWorker::class.java, WorkerA::class.java, WorkerB::class.java))
+
+        workerContinuation =
+            workerContinuation.then(OneTimeWorkRequest.Builder(MergeWorker::class.java).build())
 
         repeat(blurLevel) {
             OneTimeWorkRequest.Builder(BlurWorker::class.java).apply {
